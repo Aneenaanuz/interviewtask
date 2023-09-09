@@ -1,5 +1,0 @@
-step 1:
-    select interpreter and run server "python manage.py runserver"
-
-step 2:
-    
