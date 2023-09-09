@@ -1,0 +1,27 @@
+
+{%extends 'index.html'%}
+
+
+
+{%block body_block%}
+
+<section class="charts mt-4">
+    <section class="charts mt-4">
+      <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+              <h1 class="text-center mt-3 text-danger">Add ToDos</h1>
+              <form action="" method="post" enctype="multipart/form-data" class="shadow p-5 mb-5 rounded">
+                  {%csrf_token%}
+                  {{form.as_p}}
+                  <input type="submit" value="ADD" class="btn btn-outline-success form-control">
+              </form>
+              </div>
+              <div class="col-4"></div>
+              </div>
+    </section>
+  </section>
+
+
+
+{%endblock%}

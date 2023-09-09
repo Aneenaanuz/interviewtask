@@ -1,0 +1,48 @@
+
+{%extends 'index.html'%}
+{%load static%}
+
+{%block head_block%}
+
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<script src="{%static '/js/script.js'%}" defer></script>
+
+{%endblock%}
+
+{%block body_block%}
+
+<section class="charts mt-4">
+    <h1 class="text-center mt-4">Weather app</h1>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-2"></div>
+            <div class="col-8 p-5 border shadow">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="enter location name" id="id_city">
+
+                </div>
+                <div class="mb-2">
+                    <button class="btn btn-outline-danger form-control" onclick="fetchWeather()">FetchWeather</button>
+                </div>
+
+                <div class="mb-2">
+                    <button class="btn btn-outline-danger form-control" onclick="getCurrentLocation()">CurrentLocationWeather</button>
+                </div>
+                
+
+            </div>
+            <div class="col-2"></div>
+        </div>
+        
+    </div>
+    <div class="container" id="id-result">
+        
+    </div>
+  </section>
+
+  <section>
+    <div></div>
+  </section>
+
+
+{%endblock%}

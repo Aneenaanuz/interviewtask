@@ -1,0 +1,25 @@
+
+{%extends 'index.html'%}
+
+
+
+{%block body_block%}
+
+<section class="charts mt-4">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <h1 class="text-center mt-3 text-danger">UPDATE</h1>
+            <form action="" method="post" enctype="multipart/form-data" class="shadow p-3 mb-5 bg-body-dark rounded">
+                {%csrf_token%}
+                {{form.as_p}}
+                <input type="submit" value="UPDATE" class="btn btn-outline-success form-control">
+            </form>
+            </div>
+            <div class="col-4"></div>
+            </div>
+  </section>
+
+
+
+{%endblock%}
